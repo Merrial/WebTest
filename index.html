@@ -4,6 +4,11 @@
 		<meta charset="UTF-8">
 		<title>tonglele.github.io</title>
 		<link rel="stylesheet" href="css/index.css" />
+		<script>
+			function test(){
+				document.getElementById("display").innerHTML= Date();
+			}
+		</script>
 	</head>
 	<body>
 		<div class="title">
@@ -12,6 +17,10 @@
 			</div>
 			<div class="title-right">
 				this is title right part!
+				<form>
+					<input type="button" value="点击" onclick="test()"/>
+					<p id="display">点击显示时间</p>
+				</form>
 			</div>
 		</div>
 	</body>
