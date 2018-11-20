@@ -1,37 +1,45 @@
-.title{
-		border: 1px;
-		width: 100%;
-		height: 50px;
-		display: flex;
-		align-content: center !important;
-	}
-	.title-left{
-			width: 40%;
-			height: 100%;
-			border: 1px;
-			float: left;
-			}
-	.title-right{
-				width: 60%;
-				height: 100%;
-				float: right;
-				color: white;
-				background: black;
-			}
+body{
+	border: solid 1px;
+	height: 600px;
+	width: 1500px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-		.content{
-			width: 100%;
-			height: 100%;
-			border: 3px;
-			background: #000;
-		}
-		img{
-			width: 100%;
-			height: 100%;
-			}
-		.talbe-box{
-			/*display: flex;*/
-			width: 100%;
-			height: 100%;
-			align-content: center;
-		}
+.behind{
+	border: solid 1px;
+	height: 200px;
+	width: 500px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background: red;
+	
+}
+
+.left{
+	float: left;
+	border: solid 1px;
+	height: 200px;
+	width: 500px;
+	background: blue;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transform: rotateX(-33.5deg) rotateY(45deg);
+	
+}
+
+.right{
+	float: right;
+	border:solid 1px ;
+	height: 200px;
+	width: 500px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background: green;
+	transform: rotateX(-33.5deg) rotateY(135deg);
+}
