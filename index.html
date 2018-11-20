@@ -4,8 +4,28 @@
 		<meta charset="UTF-8">
 		<title>Homepage</title>
 		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="lib/jquery-1.8.3.js"></script>
 		<script>
 		
+		$(document).ready(function(){
+		  $(document).mousemove(function(e){
+		  	var temp = (e.pageX/20)%360;
+			$(".viewer").css({"transform":"rotateY("+temp+"deg)"});
+			
+		  	
+//		  	if((e.pageX-temp)>0){
+//		  		te
+//		  	}
+//		    $("span").text(e.pageX + ", " + e.pageY);
+
+//		    
+		  });
+		});
+//			$(function(){
+//				var temp=0;
+//				$(".viewer").css({"transform":"rotateY("+temp+"deg)"});
+//			})
+			
 		</script>
 	</head>
 	<body>
